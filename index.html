@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+</head>
+<body>
+    <h1>お問い合わせフォーム</h1>
+    <form action="save_contact.php" method="post">
+        <label for="name">お名前（必須）:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">メールアドレス（必須）:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">お問い合わせ内容（必須）:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>
